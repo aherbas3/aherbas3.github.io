@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Calibri", sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/washDC.png);
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.profile-box{
+    background: #e4d6dc;
+    text-align: center;
+    color: #000;
+    position: relative;
+    border-radius: 20px;
+    padding: 40px 40px;
+    margin: 10% 20%;
+}
+
+.profile-pic{
+    width: 200px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 6px;
+}
+
+.bio{
+    margin-top: 10px;
+}
+
+.social-media img{
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    padding:3px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.set {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.set div{
+    position: absolute;
+}
+
+.set div:nth-child(1){
+    left: 10%;
+    animation: animate 12s linear infinite;
+    animation-delay: 0s;
+}
+
+.set div:nth-child(2){
+    left: 23%;
+    animation: animate 14s linear infinite;
+    animation-delay: -5s;
+}
+
+.set div:nth-child(3){
+    left: 46%;
+    animation: animate 15s linear infinite;
+    animation-delay: -10s;
+}
+
+.set div:nth-child(4){
+    left: 63%;
+    animation: animate 12s linear infinite;
+    animation-delay: -5s;
+}
+
+.set div:nth-child(5){
+    left: 83%;
+    animation: animate 14s linear infinite;
+    animation-delay: -10s;
+}
+
+.set div:nth-child(6){
+    left: 95%;
+    animation: animate 15s linear infinite;
+    animation-delay: -0s;
+}
+
+@keyframes animate{
+    0% {
+        opacity: 0;
+        top: -10%;
+        transform: translateX(20px) rotate(0deg);
+    }
+    10% {
+        opacity:1;
+    }
+    20% {
+        opacity: .8;
+        transform: translateX(-20px) rotate(45deg);
+    }
+    40% {
+        opacity: 1;
+        transform: translateX(-20px) rotate(90deg);
+    }
+    60% {
+        opacity: .9;
+        transform: translateX(20px) rotate(180deg);
+    }
+    80% {
+        opacity: 1;
+        transform: translateX(-20px) rotate(180deg);
+    }
+    100% {
+        opacity: .7;
+        top: 110%;
+        transform: translateX(-20px) rotate(225deg);
+    }
+}
